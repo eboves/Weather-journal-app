@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #131313;
+  background-color: red;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: blue;
+  align-self: center;
+}
+.main {
+  background-color: black;
+  width: 120rem;
+  align-self: center;
+}
+.input-section {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+.generate {
+  background-color: blanchedalmond;
+}
+.output-section {
+  background-color: blueviolet;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.enter-zip {
+  width: 15rem;
+  padding-left: 1.4rem;
+}
+.output-container {
+  background-color: royalblue;
+  margin: 0 auto;
+  max-width: 100rem;
+  height: 25rem;
+}

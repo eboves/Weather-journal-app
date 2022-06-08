@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal App</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <header class="header">
+          <h1 class="title">Weather Journal App</h1>
+        </header>
+        <!-- header -->
+        <main class="main">
+          <section class="input-section">
+            <div class="journal-container">
+              <h2>How are you feeling today?</h2>
+              <textarea
+                class="myInput"
+                id="feelings"
+                placeholder="Enter your feelings here"
+                rows="9"
+                cols="50"
+              ></textarea>
+            </div>
+            <!-- Journal-container -->
+            <div class="weather-container">
+              <label for="zip">Enter Zipcode here</label>
+              <input
+                class="enter-zip"
+                type="text"
+                id="zip"
+                placeholder="enter zip code here"
+              />
+            </div>
+            <!-- weather-container -->
+          </section>
+          <!-- input-section -->
+
+          <div class="generate">
+            <button id="generate" type="submit" class="btn-generate">
+              Generate
+            </button>
+          </div>
+          <!-- generate -->
+          <section class="output-section">
+            <div class="output-container">
+              <h2 class="most-recent-title">Most Recent Entry</h2>
+              <div class="most-recent">
+                <div id="entry-holder">
+                  <div id="date"></div>
+                  <div id="temp"></div>
+                  <div id="content"></div>
+                </div>
+                <!-- entry-holder -->
+                <!-- <ul class="recent-ul-li"></ul> -->
+              </div>
+              <!-- most-recent -->
+            </div>
+            <!-- output-container -->
+          </section>
+          <!-- output-section -->
+        </main>
+        <!-- main -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- ROOT -->
+  </body>
+</html>
