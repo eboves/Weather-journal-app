@@ -11,10 +11,11 @@ const desc = document.getElementById("description");
 // Feeling Textarea
 const feelingTexarea = getElementById("feelingTexarea");
 // Generate
-const btnGenerate = document.getElementById("btnGenerate");
 
 //////////////// GETTING DATA FROM API ////////////////
-
+btnGetData.addEventListener("click", function () {
+  console.log("I was clicked");
+});
 // This is a event that triggers when the user get the weather based on the zip code
 // btnGetData.addEventListener("click", () => {
 //   let querry = zipCode.value;
@@ -25,8 +26,8 @@ const btnGenerate = document.getElementById("btnGenerate");
 //   postData(endpoint);
 // });
 
-// This function is an async function that takes an URL as a parameter
-// and fetch the data using await
+// // This function is an async function that takes an URL as a parameter
+// // and fetch the data using await
 // const postData = async (URL) => {
 //   const response = await fetch(URL);
 //   try {
@@ -38,8 +39,8 @@ const btnGenerate = document.getElementById("btnGenerate");
 //   }
 // };
 
-// This code do another async to update the dummies values with the value from the fetch
-// we requested on postData.
+// // This code do another async to update the dummies values with the value from the fetch
+// // we requested on postData.
 // const updataUI = async (data) => {
 //   const place = data.name;
 //   const temperature = Math.trunc(data.main.temp);
@@ -52,11 +53,6 @@ const btnGenerate = document.getElementById("btnGenerate");
 //////////////// GETTING DATA FROM FEELING BOX ////////////////
 
 //////////////// POSTING DATA ON MOST RECENT ////////////////
-
-btnGenerate.addEventListener("click", function () {
-  console.log("I was clicked");
-  document.querySelector("body").style.backgroundColor("blue");
-});
 
 // function postToMostRecent() {
 //   console.log("I was clicked");
