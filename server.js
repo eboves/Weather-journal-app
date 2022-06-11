@@ -26,9 +26,9 @@ app.listen(PORT, function () {
 
 const data = [];
 
-app.post("/addMovies", addMovies);
+app.post("/addJournal", addJournal);
 
-function addMovies(req, res) {
+function addJournal(req, res) {
   data.push(req.body);
   console.log(data);
   //   return data;

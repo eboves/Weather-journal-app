@@ -52,6 +52,7 @@
               <!-- <label for="zip"></label> -->
               <h2>Enter Zipcode here</h2>
               <input
+                id="zip-code"
                 class="enter-zip"
                 type="text"
                 name="zipCode"
@@ -67,16 +68,16 @@
                   <div class="weather-info">
                     <div class="place-container">
                       <h5 class="h5-title">Place</h5>
-                      <p class="place size" id="place">New York</p>
+                      <p class="place size" id="zipCodePlace">New York</p>
                     </div>
                     <!-- place-container -->
                     <div class="temperature-container">
                       <h5 class="h5-title">Temperature</h5>
                       <div class="temp flex">
-                        <p class="temperature size">89</p>
-                        <button class="degree btn-degree">
-                          &deg;<span class="converter">C</span>
-                        </button>
+                        <p id="temp" class="temperature size">89</p>
+                        <p class="degree btn-degree">
+                          &deg;<span class="converter">F</span>
+                        </p>
                       </div>
                       <!-- temp -->
                     </div>
@@ -87,19 +88,24 @@
                 <!-- weather-info-container -->
                 <div class="description-container">
                   <h5 class="h5-title">Description</h5>
-                  <p class="weather-description size" id="description">Sunny</p>
+                  <p
+                    class="weather-description size desc-title"
+                    id="description"
+                  >
+                    Sunny
+                  </p>
                 </div>
                 <!-- description-container -->
               </div>
               <!-- data-container -->
-              <button class="btn get-data">Get Weather</button>
+              <button id="get-data" class="btn get-data">Get Weather</button>
             </div>
             <!-- weather-container -->
           </section>
           <!-- input-section -->
 
           <div class="generate">
-            <button id="generate" type="submit" class="btn btn-generate">
+            <button id="btnGenerate" type="submit" class="btn btn-generate">
               Generate
             </button>
           </div>
@@ -269,5 +275,6 @@
       <!-- container -->
     </div>
     <!-- ROOT -->
+    <script src="app.js"></script>
   </body>
 </html>

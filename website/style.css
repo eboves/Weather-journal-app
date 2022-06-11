@@ -112,7 +112,9 @@ h2 {
   flex-direction: column;
 }
 /*********** Get DATA Section ***********/
-
+.desc-title {
+  text-transform: capitalize;
+}
 .enter-zip {
   width: 22rem;
   height: 3.4rem;
@@ -148,7 +150,8 @@ h2 {
 .temperature {
   font-size: 1.6rem;
 }
-button.btn-degree {
+p.btn-degree {
+  font-size: 1.6rem;
   border-bottom: 1px solid #4ead4e;
 }
 .degree {
