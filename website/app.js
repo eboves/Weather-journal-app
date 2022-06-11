@@ -9,7 +9,7 @@ const zipCodePlace = document.getElementById("zipCodePlace");
 const temp = document.getElementById("temp");
 const desc = document.getElementById("description");
 // Feeling Textarea
-const feelings = getElementById("feelings");
+const feelingTexarea = getElementById("feelingTexarea");
 // Generate
 const btnGenerate = document.getElementById("btnGenerate");
 
@@ -52,31 +52,43 @@ const btnGenerate = document.getElementById("btnGenerate");
 //////////////// GETTING DATA FROM FEELING BOX ////////////////
 
 //////////////// POSTING DATA ON MOST RECENT ////////////////
-btnGenerate.addEventListener("click", postToMostRecent);
 
-function postToMostRecent() {
+btnGenerate.addEventListener("click", function () {
   console.log("I was clicked");
-}
+  document.querySelector("body").style.backgroundColor("blue");
+});
 
-const postDataFeelings = async (url = "", data = {}) => {
-  console.log(data);
-  const response = await fetch(url, {
-    method: "POST",
-    credentials: "same-origin",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    // Body data type must match "Content-Type" header
-    body: JSON.stringify(data),
-  });
+// function postToMostRecent() {
+//   console.log("I was clicked");
+//   //   postDataFeelings("/addJournal", {
+//   //     feeling: feelings,
+//   //     icon: data.icon,
+//   //     temp: data.tem,
+//   //     data: Date
+//   //   });
+//   console.log(feelings.value);
+//   //   postDataFeelings("/", { feeling: feelings });
+// }
 
-  try {
-    const newData = await response.json();
-    console.log(newData);
-    return newData;
-  } catch (error) {
-    console.log("error", error);
-  }
-};
+// const postDataFeelings = async (url = "", data = {}) => {
+//   console.log(data);
+//   const response = await fetch(url, {
+//     method: "POST",
+//     credentials: "same-origin",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     // Body data type must match "Content-Type" header
+//     body: JSON.stringify(data),
+//   });
 
-postData("/addMovie", { movie: "Constantine", score: 5 });
+//   try {
+//     const newData = await response.json();
+//     console.log(newData);
+//     return newData;
+//   } catch (error) {
+//     console.log("error", error);
+//   }
+// };
+
+// postDataFeelings("/", { feeling: "I am doing amaing" });
