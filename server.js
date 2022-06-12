@@ -35,6 +35,6 @@ function addJournal(req, res) {
     temp: data[0].temp,
     date: data[0].date,
   });
+  console.log("serverDATA: ", data);
   //   return data;
 }
-console.log("server data: ", data);

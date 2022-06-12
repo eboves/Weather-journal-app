@@ -41,7 +41,7 @@
               <h2>How are you feeling today?</h2>
               <textarea
                 class="feeling-input"
-                id="feelingTextarea"
+                id="journalContent"
                 placeholder="Enter your feelings here"
                 rows="12"
                 cols="50"
@@ -114,12 +114,11 @@
             <div class="output-container">
               <h2 class="most-recent-title">Most Recent Entry</h2>
               <div class="most-recent">
-                </div>
                 <!-- entry-holder -->
                 <ul class="recent-ul flex">
                   <li class="most-recent-li">
                     <div class="most-recent-li-info flex">
-                      <p class="feeling">
+                      <p id="newFeeling" class="feeling">
                         Today I am feeling amazing. I woke up and went for a
                         run. I really want to change my life around. That means
                         I have to work harder.
@@ -131,14 +130,16 @@
                           </p>
                         </div>
                         <div class="temperature-li flex">
-                          <p class="temperature-li">89</p>
+                          <p id="newTemp" class="temperature-li">89</p>
                           <p class="degree">
                             &deg;<span class="converter">C</span>
                           </p>
                         </div>
-                        <div class="date">August 1, 2022</div>
+                        <div id="newDate" class="date">08/01/2022</div>
                       </div>
+                      <!-- data-info -->
                     </div>
+                    <!-- most-recent-li-info -->
                   </li>
                 </ul>
               </div>

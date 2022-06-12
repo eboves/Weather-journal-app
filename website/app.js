@@ -97,7 +97,10 @@ btnGenerate.addEventListener("click", function () {
   getTodaysDate();
   console.log("projectData: ", projectData);
   postData("/add", projectData);
+  console.log("I was clicked");
 });
+
+// TODO: LIST CODE
 
 // // create li
 // const newLi = document.createElement("li");
