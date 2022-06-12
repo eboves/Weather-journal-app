@@ -70,7 +70,7 @@ const postData = async (url = "", data = {}) => {
     console.log("error", error);
   }
 };
-const recentUl = document.querySelector("recent-ul");
+
 const updateUI = async (newData) => {
   document.getElementById("newFeeling").textContent = newData.feeling;
   document.getElementById("newTemp").textContent = newData.temp;

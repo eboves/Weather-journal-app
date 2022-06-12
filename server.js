@@ -24,12 +24,17 @@ app.listen(PORT, function () {
   console.log("Server running on port: ", PORT);
 });
 
-// const data = [];
+const data = [];
 
-// app.post("/", addJournal);
+app.post("/add", addJournal);
 
-// function addJournal(req, res) {
-//   data.push(req.body);
-//   console.log(data);
-//   //   return data;
-// }
+function addJournal(req, res) {
+  data.push(req.body);
+  res.json({
+    feeling: data[0].feeling,
+    temp: data[0].temp,
+    date: data[0].date,
+  });
+  //   return data;
+}
+console.log("server data: ", data);
